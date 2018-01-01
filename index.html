@@ -39,19 +39,19 @@
 							<a href="index.html">主页</a>
 						</li>
 						<li>
-							<a href="#">Lifestyle</a>
+							<a href="#">Mystical</a>
 						</li>
 						<li>
-							<a href="#">Travel</a>
+							<a href="#">Mystical</a>
 						</li>
 						<li>
-							<a href="#">Fashion</a>
+							<a href="#">Mystical</a>
 						</li>
 						<li>
-							<a href="#">About Me</a>
+							<a href="#">Mystical</a>
 						</li>
 						<li>
-							<a href="#">待选项</a>
+							<a href="#">Mystical</a>
 						</li>
 					</ul>
 
@@ -80,74 +80,13 @@
 				<!--/.nav-collapse -->
 			</div>
 		</nav>
-
+				<div id="player" style="position:fixed; right:0px; top:10%">
+					<div class=" col-xs-12 col-md-4" id="skPlayer"></div>				
+				</div>
 		<div class="container">
 			<header>
-							<!--
-        	作者：568166723@qq.com
-        	时间：2018-01-01
-        	描述：增加歌曲播放器start
-        -->>
-				<div class="container userBk">
-					<div class="row">
-						<div class="col-md-4">
-							<ol id="m-list">
 
-							</ol>
-						</div>
-						<div class="col-md-4">
-							<div>
-								正在播放: <strong id="rmusic"></strong>
-							</div>
-							<audio id="audio" controls autoplay loop></audio>
-							<div class="btn-group" id="ctrl-area">
-								<button id="btn-play" class="btn btn-success">  
-                            播放  
-                        </button>
-								<button id="btn-pre" class="btn btn-success">  
-                            上一首  
-                        </button>
-								<button id="btn-next" class="btn btn-success">  
-                            下一首  
-                        </button>
-								<button id="btn-pause" class="btn btn-success">  
-                            暂停  
-                        </button>
-
-								<!-- Single button -->
-								<div class="btn-group">
-									<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">  
-                                播放模式 <span class="caret"></span>  
-                            </button>
-									<ul class="dropdown-menu" role="menu">
-										<li>
-											<a href="#" id="btn-loop">
-												单曲循环
-											</a>
-										</li>
-										<li>
-											<a href="#" id="btn-order">
-												顺序播放
-											</a>
-										</li>
-										<li>
-											<a href="#" id="btn-random">
-												随机播放
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<script type="text/javascript" src="js/userJs/audio.js"></script>
-				<!--
-                    	作者：568166723@qq.com
-                    	时间：2018-01-01
-                    	描述：增加歌曲播放器end
-                    -->
-			<!--	<a href="index.html"><img src="images/logo.png"></a>-->
+				<!--	<a href="index.html"><img src="images/logo.png"></a>-->
 			</header>
 			<section class="main-slider">
 				<ul class="bxslider">
@@ -336,7 +275,7 @@
 
 		<footer class="footer">
 
-			<div class="footer-socials">
+			<div class="footer-socials" style="border:dashed #31B0D5 1px;">
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-instagram"></i></a>
@@ -347,10 +286,38 @@
 
 			<div class="footer-bottom">
 				<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br>
-	
+
 			</div>
 		</footer>
+		<!--
+        	作者：568166723@qq.com
+        	时间：2018-01-01
+        	描述：固定在底部的播放器start
+        -->
 
+		<!--<nav class="navbar navbar-default navbar-fixed-bottom" style="border:dashed #31B0D5 1px; height: 100px;">
+			<div id="player">
+				<div class=" col-xs-12 col-md-4" id="skPlayer"></div>
+				<div class="col-xs-12 col-md-8 text-right">123</div>
+				
+			</div>
+		</nav>-->
+		<script src="./dist/skPlayer.min.js">
+				</script>
+				<script>
+					var player = new skPlayer({
+						autoplay: true,
+						music: {
+							type: 'cloud',
+							source: 2025114225
+						}
+					});
+		</script>
+		<!--
+	作者：568166723@qq.com
+	时间：2018-01-01
+	描述：固定在底部的播放器end
+-->
 		<!-- Bootstrap core JavaScript
 			================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
