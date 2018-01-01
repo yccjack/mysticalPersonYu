@@ -30,7 +30,7 @@ $(function() {
 			var mhtml = '';
 			var len = Player.data.length;
 			for(var i = 0; i < len; i++) {
-				mhtml += '<li><a index="' + i + '">' + Player.data[i] + '</a></li>';
+				mhtml += '<li class="audioFromYcc"><a index="' + i + '">' + Player.data[i] + '</a></li>';
 			}
 			Player.$mList.html(mhtml);
 		},
