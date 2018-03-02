@@ -38,7 +38,7 @@ $(function() {
 		// 就绪  
 		ready: function() {
 			// 控制  
-
+			$("#rmusic").text("Future World Music - Dream Chasers.mp3");
 			Player.audio = Player.$audio.get(0);
 			console.log("Player.currentIndex : " + Player.currentIndex);
 				Player.audio.src = Player.path + Player.data[Player.currentIndex];
