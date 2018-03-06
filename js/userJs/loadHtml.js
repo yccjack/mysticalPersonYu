@@ -14,3 +14,22 @@ $("#assay1").click(function() {
 	$('#loadHtml').html(response);
 	});
 });
+
+$("#AboutMe").hide();
+
+$("#aboutMe").click(function(){
+	
+	$("#homeHtml").hide(1000,function(){
+		$("#AboutMe").fadeIn();
+	});
+	
+});
+
+$("#home").click(function(){
+	
+	$("#AboutMe").hide(1000,function(){
+		$("#homeHtml").fadeIn();
+	});
+	
+});
+

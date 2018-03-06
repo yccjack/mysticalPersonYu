@@ -19,6 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="css/userCss/audio.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link href="css/userCss/index.css" />
 	</head>
 
 	<body>
@@ -36,34 +37,31 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="index.html">主页</a>
+							<a href="javascript:viod(0);" id="home">主页</a>
 						</li>
 						<li>
-							<a href="#">Mystical</a>
+							<a href="javascript:viod(0);" id="aboutMe">AboutMe</a>
 						</li>
 						<li>
-							<a href="#">Mystical</a>
+							<a href="https://github.com/yccjack">GitHub主页</a>
 						</li>
 						<li>
-							<a href="#">Mystical</a>
+							<a href="https://yccjack.github.io/">个人主页</a>
 						</li>
 						<li>
-							<a href="#">Mystical</a>
+							<a href="javascript:viod(0);">博客</a>
 						</li>
-						<li>
-							<a href="#">Mystical</a>
-						</li>
+						<!--<li>
+							<a href="javascript:viod(0);">Mystical</a>
+						</li>-->
 					</ul>
 
-					
 				</div>
 				<!--/.nav-collapse -->
 			</div>
 		</nav>
-		<div class="container">
+		<div class="container" id="homeHtml">
 			<header>
-
-				<!--	<a href="index.html"><img src="images/logo.png"></a>-->
 			</header>
 			<section class="main-slider">
 				<ul class="bxslider">
@@ -252,116 +250,97 @@
 
 		<footer class="footer">
 
-			
 		</footer>
 		<nav class="navbar navbar-default navbar-fixed-bottom">
-  		<body>
-		<!--
+
+			<body>
+				<!--
         	作者：568166723@qq.com
         	时间：2018-01-01
         	描述：一以为skPlay放在gitHub上使用https会拉取歌单失败
         -->
-		<!--		<div id="player" style="position:fixed; right:0px; top:10%">
+				<!--		<div id="player" style="position:fixed; right:0px; top:10%">
 					<div class=" col-xs-12 col-md-4" id="skPlayer"></div>	style="position:fixed; right:0px; top:10%"			
 				</div>-->
 
+				<div class="container">
+					<div class="row">
 
-			<div class="container">
-				<div class="row">
-					
 						<div class="col-xs-6 col-md-4 text-right" style="margin-top: 18px;">
-						<div class="btn-group" id="ctrl-area">
-							<button id="btn-play" class="btn btn-success">  
+							<div class="btn-group" id="ctrl-area">
+								<button id="btn-play" class="btn btn-success">  
                             播放  
                         </button>
-							<button id="btn-pre" class="btn btn-success">  
+								<button id="btn-pre" class="btn btn-success">  
                             上一首  
                         </button>
-							<button id="btn-next" class="btn btn-success">  
+								<button id="btn-next" class="btn btn-success">  
                             下一首  
                         </button>
-							<button id="btn-pause" class="btn btn-success">  
+								<button id="btn-pause" class="btn btn-success">  
                             暂停  
-                       </button>
-	<!--	<div class="btn-group">
-								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">  
-                                播放模式 <span class="caret"></span>  
-                            </button>
-								<ul class="dropdown-menu" role="menu">
-									<li>
-										<a href="#" id="btn-loop">
-											单曲循环
-										</a>
-									</li>
-									<li>
-										<a href="#" id="btn-order">
-											顺序播放
-										</a>
-									</li>
-									<li>
-										<a href="#" id="btn-random">
-											随机播放
-										</a>
-									</li>
-								</ul>
-							</div>-->
-
+                      </button>
+							</div>
 						</div>
-					</div>
-					
-				
-				<div class="col-xs-12 col-sm-6 col-md-8 text-left">
-								<div class="col-xs-12 col-sm-6 col-md-5" >
-									<div style="margin-top: 20px;">
-										<audio id="audio" controls></audio>
-												
-									</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-8 text-left">
+							<div class="col-xs-12 col-sm-6 col-md-5">
+								<div style="margin-top: 20px;">
+									<audio id="audio" controls></audio>
+
 								</div>
-								<div class="col-sm-6 col-md-7" >
-									<div style="margin-top:25px ;"> <marquee id="rmusic" ></marquee></div>
+							</div>
+							<div class="col-sm-6 col-md-7">
+								<div style="margin-top:25px ;">
+									<marquee id="rmusic"></marquee>
 								</div>
-							
+							</div>
+
 						</div>
 					</div>
 					<script type="text/javascript" src="js/userJs/audio.js">
 					</script>
-</nav>
-		<!--
-        	作者：568166723@qq.com
-        	时间：2018-01-01
-        	描述：固定在底部的播放器start
-        -->
+		</nav>
 
-		<!--<nav class="navbar navbar-default navbar-fixed-bottom" style="border:dashed #31B0D5 1px; height: 100px;">
-			<div id="player">
-				<div class=" col-xs-12 col-md-4" id="skPlayer"></div>
-				<div class="col-xs-12 col-md-8 text-right">123</div>
-				
+		<div id="AboutMe" class="aboutMeHtml">
+			<div class="container">
+				<header>
+					<a href="index.html"><img src="images/logo.png"></a>
+				</header>
+				<section>
+					<div class="row">
+						<div class="col-md-12">
+							<article class="blog-post">
+								<div class="blog-post-body">
+									<h2><a href="post.html">About Author</a></h2>
+									<div class="blog-post-text">
+
+										<p>A newly-developed mathematical method can detect geometric structure in neural activity in the brain. “Previously, in order to understand this structure, scientists needed to relate neural activity to some specific external stimulus,” said Vladimir Itskov, associate professor of mathematics at Penn State University. “Our method is the first to be able to reveal this structure without our knowing an external stimulus ahead of time. We’ve now shown that our new method will allow us to explore the organizational structure of neurons without knowing their function in advance.”</p>
+
+										<p>“The traditional methods used by researchers to analyze the relationship between the activities of neurons were adopted from physics,” said Carina Curto, associate professor of mathematics at Penn State, “but neuroscience data doesn’t necessarily play by the same rules as data from physics, so we need new tools. Our method is a first step toward developing a new mathematical toolkit to uncover the structure of neural circuits with unknown function in the brain.”</p>
+
+										<h3>Math reveals structure in neural activity in the brain</h3>
+										<p>The method — clique topology — was developed by an interdisciplinary team of researchers at Penn State, the University of Pennsylvania, the Howard Hughes Medical Institute, and the University of Nebraska-Lincoln. The method is described in a paper that will be posted in the early online edition of the journal Proceedings of the National Academy of Sciences during the week ending October 23, 2015.</p>
+
+										<p>“We have adopted approaches from the field of algebraic topology that previously had been used primarily in the domain of pure mathematics and have applied them to experimental data on the activity of place cells — specialized neurons in the part of the brain called the hippocampus that sense the position of an animal in its environment,” said Curto.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
 			</div>
-		</nav>-->
-		<!--	<script src="./dist/skPlayer.min.js">
-				</script>
-				<script>
-					var player = new skPlayer({
-						autoplay: true,
-						music: {
-							type: 'cloud',
-							source: 2025114225
-						}
-					});
-		</script>-->
-		<!--
-	作者：568166723@qq.com
-	时间：2018-01-01
-	描述：固定在底部的播放器end
--->
-		<!-- Bootstrap core JavaScript
-			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+		</div>
+		
+		<!--博客 -->
+		<div id="CSDNycc">
+			
+		</div>
+		<script type="text/javascript" src="js/userJs/loadHtml.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bxslider.js"></script>
 		<script src="js/mooz.scripts.min.js"></script>
-	</body>
+		</body>
 
 </html>
