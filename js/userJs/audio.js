@@ -1,4 +1,4 @@
-$(function() {
+window.onload = function() {
 
 	// 播放器  
 	var Player = {
@@ -131,4 +131,4 @@ $(function() {
 	Player.init();
 	Player.ready();
 
-});
+};

@@ -40,7 +40,7 @@
 							<a href="javascript:viod(0);" id="home">主页</a>
 						</li>
 						<li>
-							<a href="javascript:viod(0);" id="aboutMe">AboutMe</a>
+							<a href="javascript:viod(0);" id="aboutMe">关于我</a>
 						</li>
 						<li>
 							<a href="https://github.com/yccjack">GitHub主页</a>
@@ -49,7 +49,7 @@
 							<a href="https://yccjack.github.io/">个人主页</a>
 						</li>
 						<li>
-							<a href="javascript:viod(0);">博客</a>
+							<a href="javascript:viod(0);" data-toggle="modal" data-target="#myModal">博客</a>
 						</li>
 						<!--<li>
 							<a href="javascript:viod(0);">Mystical</a>
@@ -60,7 +60,7 @@
 				<!--/.nav-collapse -->
 			</div>
 		</nav>
-		<div class="container" id="homeHtml">
+		<div class="container">
 			<header>
 			</header>
 			<section class="main-slider">
@@ -82,47 +82,10 @@
 			<section>
 				<div class="row">
 					<div class="col-md-8">
-						<article class="blog-post">
-							<div class="blog-post-image">
-								<a href="#"><img src="images/750x500-1.jpg" alt=""></a>
-							</div>
-							<div class="blog-post-body">
-								<h2><a href="#">待添加</a></h2>
-								<div class="post-meta"><span>作者 <a href="#">作者名</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
-								<p> 待添加文本</p>
-								<div class="read-more">
-									<a href="#">Continue Reading</a>
-								</div>
-							</div>
-						</article>
-						<!-- article -->
-						<article class="blog-post">
-							<div class="blog-post-image">
-								<a href="#"><img src="images/750x500-2.jpg" alt=""></a>
-							</div>
-							<div class="blog-post-body">
-								<h2><a href="#">作者</a></h2>
-								<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
-								<p>作者</p>
-								<div class="read-more">
-									<a href="#">继续阅读</a>
-								</div>
-							</div>
-						</article>
-						<!-- article -->
-						<article class="blog-post">
-							<div class="blog-post-image">
-								<a href="#"><img src="images/750x500-3.jpg" alt=""></a>
-							</div>
-							<div class="blog-post-body">
-								<h2><a href="#">待添加</a></h2>
-								<div class="post-meta"><span>by <a href="#">作者</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
-								<p>待添加</p>
-								<div class="read-more">
-									<a href="#">继续阅读</a>
-								</div>
-							</div>
-						</article>
+						<div id="changeHtml">
+
+						</div>
+
 					</div>
 					<div class="col-md-4 sidebar-gutter">
 						<aside>
@@ -130,121 +93,31 @@
 							<div class="sidebar-widget">
 								<h3 class="sidebar-title">关于 我</h3>
 								<div class="widget-container widget-about">
-									<a href="#"><img src="images/tm-head.jpeg" alt="你要看的图片逃跑了"></a>
-									<h4>待添加小标题</h4>
-									<div class="author-title">待添加分类</div>
-									<p>待添加文本</p>
+									<a href="javascript:viod(0);" id="aboutMeMin"><img src="images/tm-head.jpeg" alt="你要看的图片逃跑了"></a>
+									<h4>个人信息</h4>
+									<div class="author-title">点击头像你能看到更多</div>
+									<p>&nbsp;</p>
 								</div>
 							</div>
+
 							<!-- sidebar-widget -->
 							<div class="sidebar-widget">
-								<h3 class="sidebar-title">待添加标题</h3>
+								<h3 class="sidebar-title">Contact</h3>
 								<div class="widget-container">
-									<article class="widget-post">
-										<div class="post-image">
-											<a href="#"><img src="images/90x60-1.jpg" alt=""></a>
-										</div>
-										<div class="post-body">
-											<h2><a href="#">待添加</a></h2>
-											<div class="post-meta">
-												<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="#"><i class="fa fa-comment-o"></i> 23</a></span>
-											</div>
-										</div>
-									</article>
-									<article class="widget-post">
-										<div class="post-image">
-											<a href="#"><img src="images/90x60-2.jpg" alt=""></a>
-										</div>
-										<div class="post-body">
-											<h2><a href="#">待添加文档简洁说明</a></h2>
-											<div class="post-meta">
-												<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="#"><i class="fa fa-comment-o"></i> 23</a></span>
-											</div>
-										</div>
-									</article>
-									<article class="widget-post">
-										<div class="post-image">
-											<a href="#"><img src="images/90x60-3.jpg" alt=""></a>
-										</div>
-										<div class="post-body">
-											<h2><a href="#">待添加</a></h2>
-											<div class="post-meta">
-												<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="#"><i class="fa fa-comment-o"></i> 23</a></span>
-											</div>
-										</div>
-									</article>
-									<article class="widget-post">
-										<div class="post-image">
-											<a href="#"><img src="images/90x60-4.jpg" alt=""></a>
-										</div>
-										<div class="post-body">
-											<h2><a href="#">待添加</a></h2>
-											<div class="post-meta">
-												<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="#"><i class="fa fa-comment-o"></i> 23</a></span>
-											</div>
-										</div>
-									</article>
-									<article class="widget-post">
-										<div class="post-image">
-											<a href="#"><img src="images/90x60-5.jpg" alt=""></a>
-										</div>
-										<div class="post-body">
-											<h2><a href="#">待添加</a></h2>
-											<div class="post-meta">
-												<span><i class="fa fa-clock-o"></i> 2. august 2015</span> <span><a href="#"><i class="fa fa-comment-o"></i> 23</a></span>
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-							<!-- sidebar-widget -->
-							<div class="sidebar-widget">
-								<h3 class="sidebar-title">链接</h3>
-								<div class="widget-container">
-									<div class="widget-socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-instagram"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-reddit"></i></a>
+									<div class="contact">
+
+										<p><i class="fa fa-map-marker"></i> 名城世家 南京 江苏</p>
+										<p><i class="fa fa-phone"></i> 17601543214</p>
+										<p><i class="fa fa-envelope"></i> 568166723@qq.com</p>
+										<p><i class="fa fa-qq"></i> 568166723</p>
 									</div>
 								</div>
 							</div>
-							<!-- sidebar-widget -->
-							<div class="sidebar-widget">
-								<h3 class="sidebar-title">Categories</h3>
-								<div class="widget-container">
-									<ul>
-										<li>
-											<a href="#">Fashion</a>
-										</li>
-										<li>
-											<a href="#">Art</a>
-										</li>
-										<li>
-											<a href="#">Design</a>
-										</li>
-										<li>
-											<a href="#">Featured</a>
-										</li>
-										<li>
-											<a href="#">Graphics</a>
-										</li>
-										<li>
-											<a href="#">Peoples</a>
-										</li>
-										<li>
-											<a href="#">Uncategorized</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+
+						</aside>
 					</div>
-					</aside>
 				</div>
-		</div>
-		</section>
+			</section>
 		</div>
 		<!-- /.container -->
 
@@ -302,45 +175,173 @@
 					</script>
 		</nav>
 
-		<div id="AboutMe" class="aboutMeHtml">
-			<div class="container">
-				<header>
-					<a href="index.html"><img src="images/logo.png"></a>
-				</header>
-				<section>
-					<div class="row">
-						<div class="col-md-12">
-							<article class="blog-post">
-								<div class="blog-post-body">
-									<h2><a href="post.html">About Author</a></h2>
-									<div class="blog-post-text">
-
-										<p>A newly-developed mathematical method can detect geometric structure in neural activity in the brain. “Previously, in order to understand this structure, scientists needed to relate neural activity to some specific external stimulus,” said Vladimir Itskov, associate professor of mathematics at Penn State University. “Our method is the first to be able to reveal this structure without our knowing an external stimulus ahead of time. We’ve now shown that our new method will allow us to explore the organizational structure of neurons without knowing their function in advance.”</p>
-
-										<p>“The traditional methods used by researchers to analyze the relationship between the activities of neurons were adopted from physics,” said Carina Curto, associate professor of mathematics at Penn State, “but neuroscience data doesn’t necessarily play by the same rules as data from physics, so we need new tools. Our method is a first step toward developing a new mathematical toolkit to uncover the structure of neural circuits with unknown function in the brain.”</p>
-
-										<h3>Math reveals structure in neural activity in the brain</h3>
-										<p>The method — clique topology — was developed by an interdisciplinary team of researchers at Penn State, the University of Pennsylvania, the Howard Hughes Medical Institute, and the University of Nebraska-Lincoln. The method is described in a paper that will be posted in the early online edition of the journal Proceedings of the National Academy of Sciences during the week ending October 23, 2015.</p>
-
-										<p>“We have adopted approaches from the field of algebraic topology that previously had been used primarily in the domain of pure mathematics and have applied them to experimental data on the activity of place cells — specialized neurons in the part of the brain called the hippocampus that sense the position of an animal in its environment,” said Curto.</p>
-									</div>
-								</div>
-							</article>
-						</div>
+		<!-- -->
+		<div id="homeHtml">
+			<article class="blog-post">
+				<div class="blog-post-image">
+					<a href="#"><img src="images/750x500-1.jpg" alt=""></a>
+				</div>
+				<div class="blog-post-body">
+					<h2><a href="#">待添加</a></h2>
+					<div class="post-meta"><span>作者 <a href="#">作者名</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+					<p> 待添加文本</p>
+					<div class="read-more">
+						<a href="#">Continue Reading</a>
 					</div>
-				</section>
-			</div>
+				</div>
+			</article>
+			<!-- article -->
+			<article class="blog-post">
+				<div class="blog-post-image">
+					<a href="#"><img src="images/750x500-2.jpg" alt=""></a>
+				</div>
+				<div class="blog-post-body">
+					<h2><a href="#">作者</a></h2>
+					<div class="post-meta"><span>by <a href="#">Jamie Mooze</a></span>/<span><i class="fa fa-clock-o"></i>March 14, 2015</span>/<span><i class="fa fa-comment-o"></i> <a href="#">343</a></span></div>
+					<p>作者</p>
+					<div class="read-more">
+						<a href="#">继续阅读</a>
+					</div>
+				</div>
+			</article>
 		</div>
-		
 		<!--博客 -->
 		<div id="CSDNycc">
-			
-		</div>
-		<script type="text/javascript" src="js/userJs/loadHtml.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.bxslider.js"></script>
-		<script src="js/mooz.scripts.min.js"></script>
-		</body>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+							<h4 class="modal-title" id="myModalLabel">
+					博客
+				</h4>
+						</div>
+						<div class="modal-body">
+							<strong>云笔记地址：</strong><br /><br />
+							<a href="http://note.youdao.com/noteshare?id=79d45d38f8ef2610efb7b54154aa0145" style="color: #245580;">有道云笔记部分分享(外链分享非法，可能无法查看)</a><br/><br />
+							<strong>csdn地址(摘自云笔记)：<a href="http://blog.csdn.net/qq_17238449" style="color: #208020;">csdn博客</a></strong>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+
+			<!-- -->
+
+			<div id="AboutMe" class="aboutMeHtml">
+				<div class="container">
+					<section class="container">
+						<hr />
+						<div class="row">
+							<div class="col-md-8 col-sm-12">
+								<div class="education">
+									<h2 class="white">Education</h2>
+									<div class="education-content">
+										<h4 class="education-title accent">New Web Design</h4>
+										<div class="education-school">
+											<h5>School of Media</h5><span></span>
+											<h5>2030 January - 2034 December</h5>
+										</div>
+										<p class="education-description">In lacinia leo sed quam feugiat, ac efficitur dui tristique. Ut venenatis, odio quis cursus egestas, nulla sem volutpat diam, ac dapibus nisl ipsum ut ipsum. Nunc tincidunt libero non magna placerat elementum.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+					<!-- skips  -->
+					<section class="container">
+						<div class="row" style="margin-top: 20px;">
+							<div class="col-md-6 col-sm-12">
+								<div class="about">
+									<h2 class="accent">Skills</h2>
+									<strong>idea、eclipse</strong>
+									<span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+									</div>
+									<strong>Spring、SpringMVC、Mybatis </strong>
+									<span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+									</div>
+									<strong>rabbitMQ</strong>
+									<span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+									</div>
+									<strong>dubbo、zookeeper </strong>
+									<span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</section>
+					<section class="container">
+						<div class="row" style="margin-top: 20px;">
+							
+							<div class="col-md-6 col-sm-12">
+								<div class="about">
+									<h2 class="accent">Skills</h2>
+									<strong>JavaScript、Ajax、JQuery、tiles</strong>
+									<span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+									</div>
+									<strong>Tomcat部署，Linux常用命令</strong>
+									<span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+									<strong>maven、svn  </strong>
+									<span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+									</div>
+
+									<strong>java8 lambda、Redis，poi、webservice、hessian</strong>
+									<span class="pull-right">30%</span>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- experience -->
+					<section class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="experience">
+									<h2 class="white">Experiences</h2>
+									<div class="experience-content">
+										<h4 class="experience-title accent">Website Development</h4>
+										<h5>New Media Company</h5><span></span>
+										<h5>2035 January - 2036 April</h5>
+										<p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/userJs/loadHtml.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.bxslider.js"></script>
+			<script src="js/mooz.scripts.min.js"></script>
+			</body>
 
 </html>
