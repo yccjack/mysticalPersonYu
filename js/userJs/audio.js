@@ -24,7 +24,7 @@ window.onload = function() {
 		init: function() {
 
 			// 数据一般来自服务器端,通过ajax 加载数据,这里是模拟  
-			Player.data = ['Future World Music - Dream Chasers.mp3', 'Two Steps From Hell - Never Back Down.mp3', 'Two Steps From Hell - Star Sky.mp3', 'Two Steps From Hell - Victory.mp3'];
+			Player.data = ['Capo Productions - Journey.mp3', 'Two Steps From Hell - Never Back Down.mp3', 'Two Steps From Hell - Star Sky.mp3', 'Two Steps From Hell - Victory.mp3'];
 
 			// 一般用模板引擎,把数据 与 模板 转换为 视图,来显示,这里是模拟  
 			var mhtml = '';
