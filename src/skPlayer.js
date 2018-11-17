@@ -1,4 +1,4 @@
-//SKPlayer
+/*//SKPlayer
 console.log('%cSKPlayer 3.0.7', 'color:#D94240');
 
 require('./skPlayer.scss');
@@ -405,4 +405,4 @@ class skPlayer {
     }
 }
 
-module.exports = skPlayer;
+module.exports = skPlayer;*/
